@@ -28,31 +28,11 @@ header {
   width: 100%;
   height: 60px;
   padding: 0 2rem;
-
-  background: hsla(239, 94%, 14%, 1);
-
-  background: linear-gradient(
-    45deg,
-    hsla(239, 94%, 14%, 1) 0%,
-    hsla(190, 68%, 50%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    45deg,
-    hsla(239, 94%, 14%, 1) 0%,
-    hsla(190, 68%, 50%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    45deg,
-    hsla(239, 94%, 14%, 1) 0%,
-    hsla(190, 68%, 50%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#020344", endColorstr="#28B8D5", GradientType=1 );
-
-
+  background: linear-gradient(45deg, #020345, #29b9d6, #020345 70%);
+  box-shadow: 0.25rem 0 1.5rem var(--navbar);
   font-family: "Roboto", sans-serif;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +54,80 @@ header {
 }
 
 .navbar-options a:hover {
-    /* filter: invert(80%); */
-    color: var(--text-highligth);
-    font-weight: 700;
+  /* filter: invert(80%); */
+  color: var(--text-highligth);
+  font-weight: 700;
+}
+
+/* Main */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #588157, #fefae0);
+}
+
+/* Hero */
+
+.hero {
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero .hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-info .title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--title-color);
+  text-shadow: 0 0 1rem darkgreen;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.hero-info p {
+  color: #081c15;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.hero-info .hero-actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.hero-actions button {
+  background-color: var(--btn-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 16rem;
+}
+
+.hero-actions button:hover {
+  filter: invert(90%);
+}
+
+.hero-actions .call-to-action img {
+  width: 16%;
+}
+
+.hero .hero-img {
+  width: 50rem;
+  border-radius: 4rem 0;
+  box-shadow: 0 0 1.5rem black;
 }
