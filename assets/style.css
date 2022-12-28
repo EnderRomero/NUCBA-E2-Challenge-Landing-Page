@@ -4,14 +4,12 @@
   /* Colores de Fondo */
   --navbar: #003566;
   --bg-dark: #000814;
+  --gradients: linear-gradient(45deg, #dc2f02, #ffba08);
 
   /* Colores de textos */
   --title-color: #ffc300;
   --text-highligth: #ffd60a;
   --text-normal: #e5e5e5;
-
-  /* Colores de Botones */
-  --btn-yellow: #fca311;
 }
 
 * {
@@ -28,7 +26,7 @@ header {
   width: 100%;
   height: 60px;
   padding: 0 2rem;
-  background: linear-gradient(45deg, #020345, #29b9d6, #020345 70%);
+  background: linear-gradient(to top, var(--bg-dark), var(--navbar));
   box-shadow: 0.25rem 0 1.5rem var(--navbar);
   font-family: "Roboto", sans-serif;
   position: sticky;
@@ -56,66 +54,75 @@ header {
 .navbar-options a:hover {
   /* filter: invert(80%); */
   color: var(--text-highligth);
-  font-weight: 700;
 }
 
 /* Main */
 
 body {
   min-height: 100vh;
-  background: linear-gradient(45deg, #588157, #fefae0);
+  background: var(--bg-dark);
+  font-family: "Roboto", sans-serif;
+  color: var(--text-normal);
 }
 
-/* Hero */
+strong {
+  color: var(--title-color);
+}
+
+/* Section Hero */
 
 .hero {
-  padding: 3rem 6rem;
+  padding: 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 3.5rem;
-  font-family: "Roboto", sans-serif;
+  gap: 4.5rem;
 }
 
-.hero .hero-info {
+.hero .hero-info,
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
 .hero-info .title {
+  max-width: 32rem;
   font-family: "Montserrat", sans-serif;
-  color: var(--title-color);
-  text-shadow: 0 0 1rem darkgreen;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
+  background: var(--gradients);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-info p {
-  color: #081c15;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  max-width: 25rem;
 }
 
 .hero-info .hero-actions {
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .hero-actions button {
-  background-color: var(--btn-yellow);
+  background: var(--gradients);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 2rem;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   cursor: pointer;
   border-radius: 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  width: 16rem;
+  width: 10rem;
 }
 
 .hero-actions button:hover {
@@ -127,7 +134,21 @@ body {
 }
 
 .hero .hero-img {
-  width: 50rem;
-  border-radius: 4rem 0;
-  box-shadow: 0 0 1.5rem black;
+  width: 30rem;
+  border-radius: 3rem 0;
+}
+
+/* Section Info */
+.info {
+  padding: 3rem 6rem;
+}
+
+.info .info-title {
+  color: var(--title-color);
+  font-size: 2rem;
+}
+
+.info .info-text {
+  width: 60%;
+  text-align: center;
 }
