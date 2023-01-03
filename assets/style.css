@@ -49,11 +49,13 @@ header {
 
 .navbar-options a {
   color: var(--text-normal);
+  transition: 500ms ease-out;
 }
 
 .navbar-options a:hover {
   /* filter: invert(80%); */
   color: var(--text-highligth);
+  font-size: 1.2rem;
 }
 
 /* Main */
@@ -76,6 +78,7 @@ strong {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   gap: 4.5rem;
 }
 
@@ -89,7 +92,7 @@ strong {
 }
 
 .hero-info .title {
-  max-width: 32rem;
+  width: 32rem;
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
@@ -123,10 +126,12 @@ strong {
   font-size: 1rem;
   font-weight: 700;
   width: 10rem;
+  transition: 900ms ease-out;
 }
 
 .hero-actions button:hover {
   filter: invert(90%);
+  transform: scale(1.1);
 }
 
 .hero-actions .call-to-action img {
@@ -140,7 +145,11 @@ strong {
 
 /* Section Info */
 .info {
-  padding: 3rem 6rem;
+  width: 100%;
+  padding: 3rem 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .info .info-title {
@@ -149,6 +158,5 @@ strong {
 }
 
 .info .info-text {
-  width: 60%;
   text-align: center;
 }
