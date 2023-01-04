@@ -49,7 +49,7 @@ header {
 
 .navbar-options a {
   color: var(--text-normal);
-  transition: 500ms ease-out;
+  transition: 500ms ease-in;
 }
 
 .navbar-options a:hover {
