@@ -56,7 +56,7 @@ header {
 .navbar-options a:hover {
   /* filter: invert(80%); */
   color: var(--text-highligth);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Main */
@@ -154,7 +154,9 @@ strong {
   justify-content: center;
 }
 
-.info .info-title, .cards .cards-title {
+.info .info-title,
+.cards .cards-title,
+.contacts .contacts-title {
   color: var(--title-color);
   font-size: 1.5rem;
 }
@@ -166,10 +168,8 @@ strong {
 
 /* Cards */
 
-
 .cards {
   padding: 3rem;
-  
 }
 
 .cards-container {
@@ -178,20 +178,20 @@ strong {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-} 
+}
 
 .card {
   width: 250px;
   height: 250px;
   padding: 2rem 1rem;
-  background:linear-gradient(45deg, var(--bg-dark) 3%, var(--navbar));
+  background: linear-gradient(45deg, var(--bg-dark) 3%, var(--navbar));
   border: 1.5px blue solid;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
-  gap: .8rem;
+  gap: 0.8rem;
   text-align: center;
 }
 
@@ -212,5 +212,89 @@ strong {
 }
 
 .card p {
-  font-size: .9rem;
+  font-size: 0.9rem;
+}
+
+/* Contact Us */
+
+.contacts {
+  width: 100%;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 2.3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction:column;
+  gap: 2rem;
+}
+
+.contact-name {
+  color: lightskyblue;
+}
+
+.contact-address,
+.contact-email,
+.contact-phone {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: nowrap;
+}
+
+
+.contact .material-symbols-rounded {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 8px 0;
+  text-align: center;
+  background-color: var(--navbar);
+  border-radius: 20px;
+}
+
+.social-links ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts .mapa {
+  width: 400px;
+}
+
+.social-links img {
+  width: 2rem;
+}
+
+
+/* footer */
+
+footer {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .logo {
+  width: 9rem;
+
+}
+
+footer p {
+  font-size: .6rem;
 }

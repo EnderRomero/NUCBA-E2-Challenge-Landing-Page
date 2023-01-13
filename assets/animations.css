@@ -1,0 +1,8 @@
+/* Animaciones */
+
+/* Scroll de navegacion */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}

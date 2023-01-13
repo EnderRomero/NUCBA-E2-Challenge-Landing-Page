@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/animations.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
@@ -26,16 +27,16 @@
       <nav class="navbar">
         <ul class="navbar-options">
           <li>
-            <a href=""><span class="material-symbols-outlined">home</span></a>
+            <a href="#hero"><span class="material-symbols-outlined">home</span></a>
           </li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Clientes</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#info">Descubre</a></li>
+          <li><a href="#contacts">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-info">
           <h1 class="title">Porque un Curso no basta...</h1>
           <p>
@@ -59,7 +60,7 @@
         />
       </section>
 
-      <section class="info">
+      <section class="info" id="info">
         <h2 class="info-title">¿Por qué Elegirnos?</h2>
         <p class="info-text">
           Generalmente, al hacer un curso sobre el uso genérico de las
@@ -86,29 +87,101 @@
               un curso externo.
             </p>
           </div>
-          
+
           <div class="card">
             <span class="material-symbols-rounded"> psychology </span>
             <h3 class="card-title">Excelente Asimilación</h3>
             <p class="card-text">
-              Excelencia en la asimilación de los conocimiento, ya que las asesorías son aplicadas a las tareas diarias.
+              Excelencia en la asimilación de los conocimiento, ya que las
+              asesorías son aplicadas a las tareas diarias.
             </p>
           </div>
-          
+
           <div class="card">
             <span class="material-symbols-rounded">verified</span>
-            <h3 class="card-title"> Eleva tu Nivel</h3>
+            <h3 class="card-title">Eleva tu Nivel</h3>
             <p class="card-text">
-              Evoluciona a un más elevado nivel de conocimiento de las herramientas.
+              Evoluciona a un más elevado nivel de conocimiento de las
+              herramientas.
             </p>
           </div>
         </div>
-
       </section>
 
-      <section class="contact"></section>
-    </main>
+      <section class="contacts" id="contacts">
 
-    <footer></footer>
+        <div class="contacts-data">
+          <h2 class="contacts-title">Contáctanos</h2>
+          <div class="contacts-container">
+            <div class="contact">
+              <h3 class="contact-name">Ender Romero</h3>
+              <div class="contact-address">
+                <span class="material-symbols-rounded">home_pin</span>
+                <p class="address">Calle desconocida 9911 Cordoba</p>
+              </div>
+              <div class="contact-email">
+                <span class="material-symbols-rounded">mail</span>
+                <p class="email">end1976@gmail.com</p>
+              </div>
+              <div class="contact-phone">
+                <span class="material-symbols-rounded">phone_android</span>
+                <p class="phone">9 351 5555</p>
+              </div>
+            </div>
+  
+            <div class="contact">
+              <h3 class="contact-name">Fulanito de Tal</h3>
+              <div class="contact-address">
+                <span class="material-symbols-rounded">home_pin</span>
+                <p class="address">Calle desconocida 1199 Cordoba</p>
+              </div>
+              <div class="contact-email">
+                <span class="material-symbols-rounded">mail</span>
+                <p class="email">fulanito6@gmail.com</p>
+              </div>
+              <div class="contact-phone">
+                <span class="material-symbols-rounded">phone_android</span>
+                <p class="phone">9 351 9999</p>
+              </div>
+            </div>  
+          </div>
+          
+          <div class="social-links">
+            <ul>
+              <li>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/twitter-logo.png" alt="Logo de twitter"> </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/instagram-ico.png" alt="Logo de instagram"> </a>
+              </li>
+              <li>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/facebook-ico.png" alt="Logo de facebook"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42502.728935731815!2d-64.18777059123414!3d-31.403581792135213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d637f8d237037c1!2sLibertad%20%5BSucursal%3A%20C%C3%93RDOBA%20%E2%80%93%20Hipermercado%20Jacinto%20R%C3%ADos%5D%20%7C%20Libertad%20S.A.!5e0!3m2!1ses!2sar!4v1673571947344!5m2!1ses!2sar"
+            width="400"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <img
+        class="logo"
+        src="./assets/ender-logo-2.png"
+        alt="Logo de Ender Romero"
+      />
+      <p>Copyright - Ender Romero - Asesor</p>
+    </footer>
   </body>
 </html>
