@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Tangerine:wght@400;700&display=swap");
 
 :root {
   /* Colores de Fondo */
@@ -8,6 +8,7 @@
 
   /* Colores de textos */
   --title-color: #ffc300;
+  --sub-title-color: #dc2f02;
   --text-highligth: #ffd60a;
   --text-normal: #e5e5e5;
 }
@@ -83,7 +84,8 @@ strong {
 }
 
 .hero .hero-info,
-.info {
+.info,
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,11 +154,63 @@ strong {
   justify-content: center;
 }
 
-.info .info-title {
+.info .info-title, .cards .cards-title {
   color: var(--title-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .info .info-text {
   text-align: center;
+  font-size: 1rem;
+}
+
+/* Cards */
+
+
+.cards {
+  padding: 3rem;
+  
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+} 
+
+.card {
+  width: 250px;
+  height: 250px;
+  padding: 2rem 1rem;
+  background:linear-gradient(45deg, var(--bg-dark) 3%, var(--navbar));
+  border: 1.5px blue solid;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: .8rem;
+  text-align: center;
+}
+
+.card .material-symbols-rounded {
+  background: var(--gradients);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 3.5rem;
+}
+
+.card .card-title {
+  color: var(--text-highligth);
+}
+
+.cards .cards-text {
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: .9rem;
 }
