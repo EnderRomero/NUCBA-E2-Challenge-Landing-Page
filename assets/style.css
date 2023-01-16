@@ -11,6 +11,7 @@
   --sub-title-color: #dc2f02;
   --text-highligth: #ffd60a;
   --text-normal: #e5e5e5;
+
 }
 
 * {
@@ -77,7 +78,7 @@ strong {
 .hero {
   padding: 6rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 4.5rem;
@@ -114,6 +115,7 @@ strong {
   display: flex;
   justify-content: flex-start;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-actions button {
@@ -128,6 +130,7 @@ strong {
   font-size: 1rem;
   font-weight: 700;
   width: 10rem;
+  height: 2.8rem;
   transition: 900ms ease-out;
 }
 
@@ -221,8 +224,9 @@ strong {
   width: 100%;
   padding: 3rem 6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 3.5rem;
 }
 
 .contacts-data {
@@ -234,6 +238,7 @@ strong {
 
 .contacts-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 2.3rem;
 }
 
@@ -297,4 +302,28 @@ footer .logo {
 
 footer p {
   font-size: .6rem;
+}
+
+@media (max-width: 560px) {
+  header {
+    padding: 0 1rem;
+  }
+  
+  .navbar-options {
+    gap: .8rem;
+  }
+
+    .hero .hero-info,
+    .hero-info .title {
+      width: 80vw;
+  }
+
+  .hero .hero-img {
+    width: 80vw;
+  }
+
+  .contacts .mapa iframe {
+    width: 80vw;
+  }
+
 }
